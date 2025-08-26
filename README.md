@@ -70,6 +70,7 @@ export default {
 
     pageTracking: false,
     pageViewEventName: 'nuxtRoute',
+    pushOriginalLocation: false,
 
     autoInit: true,
     respectDoNotTrack: true,
@@ -145,6 +146,23 @@ You can optionally set `pageTracking` option to `true` to track page views.
 **Note:** This is disabled by default to prevent double events when using alongside with Google Analytics so take care before enabling this option.
 
 The default event name for page views is `nuxtRoute`, you can change it by setting the `pageViewEventName` option.
+
+### Original Location Tracking
+
+You can optionally set `pushOriginalLocation` option to `true` to include the original page location (referrer) in page tracking events. This can help address "Rogue Referral" issues when tracking paid traffic.
+
+```js
+export default {
+  gtm: {
+    pageTracking: true,
+    pushOriginalLocation: true
+  }
+}
+```
+
+When enabled, page view events will include an `originalLocation` field containing `document.referrer` (when available).
+
+Source [feat: Add option to address "Rogue Referral" issue when tracking paid traffic via GTM+GA](https://github.com/nuxt-community/gtm-module/pull/117)
 
 ## Usage
 
