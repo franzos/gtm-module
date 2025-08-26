@@ -94,7 +94,7 @@ for (const mode of modes) {
 
       await expectPageTrackingEvent(window.dataLayer, {
         event: 'nuxtRoute',
-        pageTitle: '@nuxtjs/gtm-module',
+        pageTitle: 'nuxtjs-gtm-module',
         pageType: 'PageView',
         pageUrl: '/'
       })
@@ -132,7 +132,7 @@ for (const mode of modes) {
 
       await expectPageTrackingEvent(window.testDataLayer, {
         event: 'nuxtRoute',
-        pageTitle: '@nuxtjs/gtm-module',
+        pageTitle: 'nuxtjs-gtm-module',
         pageType: 'PageView',
         pageUrl: '/base/',
         routeName: 'index'

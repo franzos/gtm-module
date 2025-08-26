@@ -4,7 +4,7 @@ module.exports = {
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
   head: {
-    title: '@nuxtjs/gtm-module'
+    title: 'nuxtjs-gtm-module'
   },
   srcDir: __dirname,
   render: {

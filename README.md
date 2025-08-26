@@ -180,6 +180,14 @@ this.$gtm.push({ event: 'myEvent', ...someAttributes })
 2. Install dependencies using `yarn install` or `npm install`
 3. Start development server using `yarn dev` or `GTM_ID=<your gtm id> yarn dev` if you want to provide custom GTM_ID.
 
+### Testing
+
+Tests require a valid GTM container ID to be set as an environment variable:
+
+```bash
+GTM_ID=GTM-XXXXXXX npm test
+```
+
 ## License
 
 [MIT License](./LICENSE)
