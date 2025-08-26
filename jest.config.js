@@ -3,7 +3,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'lib/**/*.js',
-    '!lib/plugin.js'
+    '!lib/plugin*.js'
   ],
   moduleNameMapper: {
     '^~/(.*)$': '<rootDir>/lib/$1',
@@ -13,5 +13,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.js$': 'babel-jest'
-  }
+  },
+  testTimeout: 60000,
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js']
 }

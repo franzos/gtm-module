@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0]
+
+### Changed
+* Migrated build system from yarn to pnpm
+* Updated CI to Node.js 22 and modern GitHub Actions
+* Fixed ESLint configuration for compatibility with newer versions
+* Improved test stability and dependencies
+
 ## [2.4.0](https://github.com/nuxt-community/gtm-module/compare/v2.3.2...v2.4.0) (2020-11-10)
 
 

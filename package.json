@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/gtm",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Google Tag Manager Module for Nuxt.js",
   "repository": "nuxt-community/gtm-module",
   "license": "MIT",
@@ -12,26 +12,36 @@
     "dev": "nuxt example",
     "generate": "nuxt generate example",
     "lint": "eslint --ext .js,.vue example lib test",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "release": "npm test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "semver": "^7.3.2"
+    "chalk": "^4.1.2",
+    "semver": "^7.7.2"
   },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
+    "@babel/runtime": "latest",
     "@nuxtjs/eslint-config": "latest",
     "@nuxtjs/module-test-utils": "latest",
     "@types/jest": "latest",
-    "babel-eslint": "latest",
+    "@babel/eslint-parser": "latest",
     "babel-jest": "latest",
     "codecov": "latest",
-    "eslint": "latest",
+    "core-js": "latest",
+    "eslint": "^8.0.0",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "latest"
+    "standard-version": "latest",
+    "vue": "^2.7.0",
+    "vue-router": "^3.6.0",
+    "vue-client-only": "^2.1.0",
+    "vue-no-ssr": "^1.1.1",
+    "regenerator-runtime": "latest",
+    "ufo": "latest",
+    "unfetch": "latest",
+    "jsdom": "^26"
   },
   "publishConfig": {
     "access": "public"

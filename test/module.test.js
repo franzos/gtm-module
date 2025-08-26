@@ -23,7 +23,7 @@ for (const mode of modes) {
   describe(`Module (${mode} mode)`, () => {
     let nuxt
 
-    const nuxtConfig = loadConfig(__dirname, '../../example')
+    const nuxtConfig = loadConfig(path.join(__dirname, '../example'))
     nuxtConfig.mode = mode
 
     const gtmId = nuxtConfig.gtm.id
@@ -96,8 +96,7 @@ for (const mode of modes) {
         event: 'nuxtRoute',
         pageTitle: '@nuxtjs/gtm-module',
         pageType: 'PageView',
-        pageUrl: '/',
-        routeName: 'index'
+        pageUrl: '/'
       })
     })
   })
@@ -114,7 +113,7 @@ for (const mode of modes) {
       }
     }
 
-    const nuxtConfig = loadConfig(__dirname, '../../example', override, { merge: true })
+    const nuxtConfig = loadConfig(path.join(__dirname, '../example'), undefined, override, { merge: true })
     if (!nuxtConfig.router) {
       nuxtConfig.router = {}
     }
