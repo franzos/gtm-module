@@ -1,4 +1,4 @@
-# @nuxtjs/gtm
+# nuxtjs-gtm-module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -14,18 +14,18 @@
 
 ## Setup
 
-1. Add `@nuxtjs/gtm` dependency to your project
+1. Add `nuxtjs-gtm-module` dependency to your project
 
 ```bash
-yarn add @nuxtjs/gtm # or npm install @nuxtjs/gtm
+yarn add nuxtjs-gtm-module # or npm install nuxtjs-gtm-module
 ```
 
-2. Add `@nuxtjs/gtm` to the `modules` section of `nuxt.config.js`
+2. Add `nuxtjs-gtm-module` to the `modules` section of `nuxt.config.js`
 
 ```js
 export default {
   modules: [
-    '@nuxtjs/gtm',
+    'nuxtjs-gtm-module',
   ],
   gtm: {
     id: 'GTM-XXXXXXX'
@@ -39,7 +39,7 @@ You can use [runtime config](https://nuxtjs.org/guide/runtime-config) if need to
 ```js
 export default {
   modules: [
-    '@nuxtjs/gtm'
+    'nuxtjs-gtm-module'
   ],
 
   gtm: {
@@ -120,7 +120,7 @@ There are several use cases that you may need more control over initialization:
 ```js
 export default {
  modules: [
-  '@nuxtjs/gtm'
+  'nuxtjs-gtm-module'
  ],
  plugins: [
   '~/plugins/gtm'
@@ -185,7 +185,7 @@ this.$gtm.push({ event: 'myEvent', ...someAttributes })
 Tests require a valid GTM container ID to be set as an environment variable:
 
 ```bash
-GTM_ID=GTM-XXXXXXX npm test
+GTM_ID=<your gtm id> npm test
 ```
 
 ## License
@@ -195,11 +195,11 @@ GTM_ID=GTM-XXXXXXX npm test
 Copyright (c) Nuxt.js Community
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/gtm/latest.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/gtm
+[npm-version-src]: https://img.shields.io/npm/v/nuxtjs-gtm-module/latest.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/nuxtjs-gtm-module
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/gtm.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/gtm
+[npm-downloads-src]: https://img.shields.io/npm/dt/nuxtjs-gtm-module.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/nuxtjs-gtm-module
 
 [checks-src]: https://img.shields.io/github/workflow/status/nuxt-community/gtm-module/test/master?style=flat-square
 [checks-href]: https://github.com/nuxt-community/gtm-module/actions
@@ -207,5 +207,5 @@ Copyright (c) Nuxt.js Community
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/gtm-module.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/nuxt-community/gtm-module
 
-[license-src]: https://img.shields.io/npm/l/@nuxtjs/gtm.svg?style=flat-square
-[license-href]: https://npmjs.com/package/@nuxtjs/gtm
+[license-src]: https://img.shields.io/npm/l/nuxtjs-gtm-module.svg?style=flat-square
+[license-href]: https://npmjs.com/package/nuxtjs-gtm-module
